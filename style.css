@@ -192,11 +192,11 @@ html {
 .setting-container {
     width: 60px;
     height: 50px;
-    margin-left: 50px;
+    margin-left: 30px;
     display: flex;
     align-items: center;
     gap: 30px;
-    padding: 20px 0
+    padding: 0;
 }
 
 #labelforsetting {
@@ -929,7 +929,7 @@ noscript {
 }
 
 .resume-btn {
-    margin-top: 25px;
+    margin-top: 0;
     justify-content: flex-start;
     width: 45px;
     height: 45px;
@@ -1822,11 +1822,11 @@ footer {
 
     .hamburger {
         position: fixed;
-        top: 0;
+        top: 20px;
         width: 100vw;
-        height: 115px;
+        height: 80px;
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         justify-content: center;
         z-index: 9998
     }
@@ -1846,7 +1846,6 @@ footer {
         align-items: center;
         justify-content: flex-start;
         padding-left: 20px;
-        padding: 20px
     }
 
     #hamburger-button {
@@ -1858,7 +1857,8 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between
+        justify-content: space-between;
+        margin-top: -90px;
     }
 
     #burger-bar1,
@@ -2018,9 +2018,10 @@ footer {
     }
 
     .contact-btn-div {
-        height: 140px;
+        height: auto;
+        min-height: 200px;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
         gap: 20px
