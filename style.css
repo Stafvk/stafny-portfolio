@@ -1844,7 +1844,8 @@ footer {
         height: 80px;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: flex-start;
+        padding-left: 20px;
         padding: 20px
     }
 
