@@ -1,0 +1,48 @@
+{
+  "timestamp": "2025-08-23T20:01:45.151Z",
+  "overallStatus": "PASSED",
+  "totalTime": 101245,
+  "criticalFailures": 0,
+  "totalFailures": 2,
+  "results": [
+    {
+      "testName": "OpenAI Connection",
+      "success": true,
+      "duration": 5601,
+      "critical": true,
+      "parsedResults": {
+        "estimatedCost": 0.018
+      },
+      "error": null
+    },
+    {
+      "testName": "Firebase Connection",
+      "success": true,
+      "duration": 3435,
+      "critical": true,
+      "parsedResults": {},
+      "error": null
+    },
+    {
+      "testName": "AI Rule Generation",
+      "success": false,
+      "duration": 48511,
+      "critical": false,
+      "parsedResults": {},
+      "error": "Command failed: npm run test:ai-generation\n❌ Error generating California state rules: Error: No content received from OpenAI\n    at AIRuleGenerator.generateStateRules (/Users/roviandsouza/Documents/Stafny/clawse/src/services/AIRuleGenerator.ts:54:27)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async testAIGeneration (/Users/roviandsouza/Documents/Stafny/clawse/src/test-ai-generation.ts:80:24)\n❌ AI generation test failed: Error: No content received from OpenAI\n    at AIRuleGenerator.generateStateRules (/Users/roviandsouza/Documents/Stafny/clawse/src/services/AIRuleGenerator.ts:54:27)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async testAIGeneration (/Users/roviandsouza/Documents/Stafny/clawse/src/test-ai-generation.ts:80:24)\nError message: No content received from OpenAI\nError stack: Error: No content received from OpenAI\n    at AIRuleGenerator.generateStateRules (/Users/roviandsouza/Documents/Stafny/clawse/src/services/AIRuleGenerator.ts:54:27)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async testAIGeneration (/Users/roviandsouza/Documents/Stafny/clawse/src/test-ai-generation.ts:80:24)\n"
+    },
+    {
+      "testName": "End-to-End Workflow",
+      "success": false,
+      "duration": 39687,
+      "critical": false,
+      "parsedResults": {},
+      "error": "Command failed: npm run test:end-to-end\n❌ Error generating rules with AI: Error: No content received from OpenAI\n    at AIRuleGenerator.generateFederalRules (/Users/roviandsouza/Documents/Stafny/clawse/src/services/AIRuleGenerator.ts:27:27)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async runEndToEndTest (/Users/roviandsouza/Documents/Stafny/clawse/src/test-end-to-end.ts:34:26)\n❌ End-to-end test failed: Error: No content received from OpenAI\n    at AIRuleGenerator.generateFederalRules (/Users/roviandsouza/Documents/Stafny/clawse/src/services/AIRuleGenerator.ts:27:27)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async runEndToEndTest (/Users/roviandsouza/Documents/Stafny/clawse/src/test-end-to-end.ts:34:26)\nError message: No content received from OpenAI\nError stack: Error: No content received from OpenAI\n    at AIRuleGenerator.generateFederalRules (/Users/roviandsouza/Documents/Stafny/clawse/src/services/AIRuleGenerator.ts:27:27)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async runEndToEndTest (/Users/roviandsouza/Documents/Stafny/clawse/src/test-end-to-end.ts:34:26)\n"
+    }
+  ],
+  "metrics": {
+    "totalRulesGenerated": 0,
+    "totalTokensUsed": 0,
+    "totalCost": 0.018
+  }
+}

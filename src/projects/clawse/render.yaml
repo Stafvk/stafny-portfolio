@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: clawse-business-compliance
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: FIREBASE_PROJECT_ID
+        sync: false
+      - key: FIREBASE_PRIVATE_KEY
+        sync: false
+      - key: FIREBASE_CLIENT_EMAIL
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: REGULATIONS_API_KEY
+        sync: false
